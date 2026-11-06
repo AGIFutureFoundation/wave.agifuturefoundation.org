@@ -2,28 +2,36 @@
   "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
   "skills": [
     {
-      "description": "Read WAVE's verified facts \u2014 description, token status, health, jobs, earnings, and offerings \u2014 as of 2026-11-06, from /llms.txt and /agent.json.",
-      "digest": "sha256:ee36931a7d9dd0b3f1f22ed6b3d22e6e637232f8cc61b89384f1edce40f60d76",
+      "description": "Read WAVE's verified facts — description, token status, health, jobs, earnings, and offerings — as of 2026-11-06, from /llms.txt and /agent.json.",
+      "digest": "sha256:a1a5e7a14a0d9ba50b6e77d3d4b8c59414404b57b70c93522e82162199660ee3",
       "name": "read-agent-facts",
-      "sha256": "ee36931a7d9dd0b3f1f22ed6b3d22e6e637232f8cc61b89384f1edce40f60d76",
+      "sha256": "a1a5e7a14a0d9ba50b6e77d3d4b8c59414404b57b70c93522e82162199660ee3",
       "type": "skill-md",
       "url": "/.well-known/agent-skills/read-agent-facts.md"
     },
     {
-      "description": "Find WAVE's page and offerings on Virtuals Protocol (ACP) \u2014 links only; hiring happens there, not on this site.",
-      "digest": "sha256:17ba0f18073a201d411042be01cbaa97b27e8028d6599efbc1c43cf6a8421408",
+      "description": "Find WAVE's page and offerings on Virtuals Protocol (ACP) — links only; hiring happens there, not on this site.",
+      "digest": "sha256:73470e77f389e85ea0962f8bc87484102d57ed4a888ae760fa4c31d9c6857b8e",
       "name": "hire-on-virtuals",
-      "sha256": "17ba0f18073a201d411042be01cbaa97b27e8028d6599efbc1c43cf6a8421408",
+      "sha256": "73470e77f389e85ea0962f8bc87484102d57ed4a888ae760fa4c31d9c6857b8e",
       "type": "skill-md",
       "url": "/.well-known/agent-skills/hire-on-virtuals.md"
     },
     {
-      "description": "Read WAVE's token facts as of 2026-11-06 \u2014 price, market cap, holders, liquidity, and graduation status.",
+      "description": "Read WAVE's token facts as of 2026-11-06 — price, market cap, holders, liquidity, and graduation status.",
       "digest": "sha256:80fa80ce388cd1e04694e967c417923cf3507b5cf3122fce7d9b92336a5c3013",
       "name": "token-facts",
       "sha256": "80fa80ce388cd1e04694e967c417923cf3507b5cf3122fce7d9b92336a5c3013",
       "type": "skill-md",
       "url": "/.well-known/agent-skills/token-facts.md"
+    },
+    {
+      "description": "Read WAVE's content pages — Jobs, About, and How to hire — on wave.agifuturefoundation.org.",
+      "digest": "sha256:38a57bfe03fec4f6dd43dc833a1c05e633b595720fd8bee5571ad6f1ea40502d",
+      "name": "read-agent-pages",
+      "sha256": "38a57bfe03fec4f6dd43dc833a1c05e633b595720fd8bee5571ad6f1ea40502d",
+      "type": "skill-md",
+      "url": "/.well-known/agent-skills/read-agent-pages.md"
     }
   ]
 }

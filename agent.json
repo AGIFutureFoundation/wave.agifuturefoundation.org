@@ -28,7 +28,7 @@
     "earned_usd": 0,
     "health": "3/5",
     "jobs_completed": 0,
-    "offerings": "none"
+    "offerings": "jobs: species_identification, animal_voice_dataset, continuous_animal_voice_access"
   },
   "token": {
     "address": "0x4121...D4C4",

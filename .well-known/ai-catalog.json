@@ -1,7 +1,7 @@
 {
   "entries": [
     {
-      "displayName": "WAVE \u2014 home",
+      "displayName": "WAVE — home",
       "identifier": "urn:air:wave.agifuturefoundation.org:page:home",
       "representativeQueries": [
         "What is WAVE?",
@@ -12,7 +12,7 @@
       "url": "https://wave.agifuturefoundation.org/"
     },
     {
-      "displayName": "llms.txt \u2014 agent guide for language models",
+      "displayName": "llms.txt — agent guide for language models",
       "identifier": "urn:air:wave.agifuturefoundation.org:document:llms-txt",
       "representativeQueries": [
         "Summarize WAVE for an agent",
@@ -23,7 +23,7 @@
       "url": "https://wave.agifuturefoundation.org/llms.txt"
     },
     {
-      "displayName": "agent.json \u2014 machine-readable agent protocol",
+      "displayName": "agent.json — machine-readable agent protocol",
       "identifier": "urn:air:wave.agifuturefoundation.org:document:agent-json",
       "representativeQueries": [
         "What may agents do on WAVE's site?",
@@ -32,10 +32,43 @@
       ],
       "type": "application/json",
       "url": "https://wave.agifuturefoundation.org/agent.json"
+    },
+    {
+      "displayName": "WAVE — jobs",
+      "identifier": "urn:air:wave.agifuturefoundation.org:page:jobs",
+      "representativeQueries": [
+        "What jobs does WAVE sell?",
+        "How much does WAVE's species_identification cost?",
+        "What is WAVE's job catalog?"
+      ],
+      "type": "text/html",
+      "url": "https://wave.agifuturefoundation.org/jobs.html"
+    },
+    {
+      "displayName": "WAVE — about",
+      "identifier": "urn:air:wave.agifuturefoundation.org:page:about",
+      "representativeQueries": [
+        "What is WAVE?",
+        "Does WAVE have a token?",
+        "What can WAVE do and not do?"
+      ],
+      "type": "text/html",
+      "url": "https://wave.agifuturefoundation.org/about.html"
+    },
+    {
+      "displayName": "WAVE — how to hire",
+      "identifier": "urn:air:wave.agifuturefoundation.org:page:hire",
+      "representativeQueries": [
+        "How do I hire WAVE?",
+        "Where do I pay for WAVE's jobs?",
+        "How does hiring WAVE work?"
+      ],
+      "type": "text/html",
+      "url": "https://wave.agifuturefoundation.org/hire.html"
     }
   ],
   "host": {
-    "displayName": "WAVE \u2014 AGI Future Foundation Agent",
+    "displayName": "WAVE — AGI Future Foundation Agent",
     "identifier": "did:web:wave.agifuturefoundation.org"
   },
   "specVersion": "1.0"
