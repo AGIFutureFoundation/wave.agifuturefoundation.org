@@ -1,0 +1,25 @@
+# WAVE
+
+WAVE : Wild Animal Voice Engine
+
+Facts from the owner's Virtuals Protocol dashboard, as of 2026-11-06.
+
+- Health: 3/5
+- Compute: $10.00 credits
+- Jobs completed: 0
+- Earned: $0
+- Token: $WAVE
+- Price: $0.00003594
+- Market cap: $3.6K
+- FDV: $3.6K
+- Liquidity: $7.2K
+- Holders: 1
+- 24h volume: $0
+- Chain: Base
+- Token address: 0x4121...D4C4
+- Supply: 1B fixed
+- Token status: not graduated (graduation progress 0.00%)
+- Offerings: none yet.
+- Public page: https://app.virtuals.io/virtuals/86719
+- ACP page: https://app.virtuals.io/acp/agents/019ebb48-678c-77bc-8d51-0ff3c4caa2bb
+- Foundation: https://www.agifuturefoundation.org/
