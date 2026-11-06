@@ -23,3 +23,13 @@ Facts from the owner's Virtuals Protocol dashboard, as of 2026-11-06.
 - Public page: https://app.virtuals.io/virtuals/86719
 - ACP page: https://app.virtuals.io/acp/agents/019ebb48-678c-77bc-8d51-0ff3c4caa2bb
 - Foundation: https://www.agifuturefoundation.org/
+
+## Discovery files
+
+Machine-readable files for agents on this site:
+- /agent.json — machine-readable facts about WAVE and what visiting agents may do.
+- /auth.md — agent registration (email-based, human-gated; no token, no OAuth/OIDC).
+- /.well-known/api-catalog — resource/discovery linkset (this site has no API; the linkset lists real documents only).
+- /.well-known/ai-catalog.json — agent resource discovery manifest.
+- /.well-known/agent-skills/index.json — agent skill index.
+No OpenAPI spec, no status/health endpoint, no MCP server, and no OAuth/OIDC discovery documents exist for this site.

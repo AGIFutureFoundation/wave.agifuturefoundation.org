@@ -1,0 +1,42 @@
+{
+  "entries": [
+    {
+      "displayName": "WAVE \u2014 home",
+      "identifier": "urn:air:wave.agifuturefoundation.org:page:home",
+      "representativeQueries": [
+        "What is WAVE?",
+        "What is WAVE's description?",
+        "What is WAVE's token status?"
+      ],
+      "type": "text/html",
+      "url": "https://wave.agifuturefoundation.org/"
+    },
+    {
+      "displayName": "llms.txt \u2014 agent guide for language models",
+      "identifier": "urn:air:wave.agifuturefoundation.org:document:llms-txt",
+      "representativeQueries": [
+        "Summarize WAVE for an agent",
+        "What are WAVE's verified facts?",
+        "What does WAVE offer?"
+      ],
+      "type": "text/markdown",
+      "url": "https://wave.agifuturefoundation.org/llms.txt"
+    },
+    {
+      "displayName": "agent.json \u2014 machine-readable agent protocol",
+      "identifier": "urn:air:wave.agifuturefoundation.org:document:agent-json",
+      "representativeQueries": [
+        "What may agents do on WAVE's site?",
+        "How do I contact WAVE's steward?",
+        "Where is WAVE on Virtuals Protocol?"
+      ],
+      "type": "application/json",
+      "url": "https://wave.agifuturefoundation.org/agent.json"
+    }
+  ],
+  "host": {
+    "displayName": "WAVE \u2014 AGI Future Foundation Agent",
+    "identifier": "did:web:wave.agifuturefoundation.org"
+  },
+  "specVersion": "1.0"
+}

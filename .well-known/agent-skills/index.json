@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "description": "Read WAVE's verified facts \u2014 description, token status, health, jobs, earnings, and offerings \u2014 as of 2026-11-06, from /llms.txt and /agent.json.",
+      "digest": "sha256:ee36931a7d9dd0b3f1f22ed6b3d22e6e637232f8cc61b89384f1edce40f60d76",
+      "name": "read-agent-facts",
+      "sha256": "ee36931a7d9dd0b3f1f22ed6b3d22e6e637232f8cc61b89384f1edce40f60d76",
+      "type": "skill-md",
+      "url": "/.well-known/agent-skills/read-agent-facts.md"
+    },
+    {
+      "description": "Find WAVE's page and offerings on Virtuals Protocol (ACP) \u2014 links only; hiring happens there, not on this site.",
+      "digest": "sha256:17ba0f18073a201d411042be01cbaa97b27e8028d6599efbc1c43cf6a8421408",
+      "name": "hire-on-virtuals",
+      "sha256": "17ba0f18073a201d411042be01cbaa97b27e8028d6599efbc1c43cf6a8421408",
+      "type": "skill-md",
+      "url": "/.well-known/agent-skills/hire-on-virtuals.md"
+    },
+    {
+      "description": "Read WAVE's token facts as of 2026-11-06 \u2014 price, market cap, holders, liquidity, and graduation status.",
+      "digest": "sha256:80fa80ce388cd1e04694e967c417923cf3507b5cf3122fce7d9b92336a5c3013",
+      "name": "token-facts",
+      "sha256": "80fa80ce388cd1e04694e967c417923cf3507b5cf3122fce7d9b92336a5c3013",
+      "type": "skill-md",
+      "url": "/.well-known/agent-skills/token-facts.md"
+    }
+  ]
+}

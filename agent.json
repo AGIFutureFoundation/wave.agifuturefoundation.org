@@ -1,0 +1,51 @@
+{
+  "agent_protocol": "PROPOSED, human-gated, receipt-required",
+  "capabilities": [
+    "summarize",
+    "cite",
+    "route_inquiry"
+  ],
+  "contact": "x@agifuturefoundation.org",
+  "description": "WAVE : Wild Animal Voice Engine",
+  "machine_readable": [
+    "/.well-known/api-catalog",
+    "/.well-known/agent-skills/index.json",
+    "/.well-known/ai-catalog.json",
+    "/auth.md",
+    "/llms.txt",
+    "/agent.json"
+  ],
+  "name": "WAVE",
+  "not_capabilities": [
+    "commit",
+    "transfer_funds",
+    "sign",
+    "represent_organization"
+  ],
+  "status": {
+    "as_of": "2026-11-06",
+    "compute": "$10.00 credits",
+    "earned_usd": 0,
+    "health": "3/5",
+    "jobs_completed": 0,
+    "offerings": "none"
+  },
+  "token": {
+    "address": "0x4121...D4C4",
+    "chain": "Base",
+    "fdv": "$3.6K",
+    "graduated": false,
+    "holders": "1",
+    "liq": "$7.2K",
+    "mcap": "$3.6K",
+    "price": "$0.00003594",
+    "supply": "1B fixed",
+    "ticker": "$WAVE",
+    "vol24h": "$0"
+  },
+  "url": "https://wave.agifuturefoundation.org/",
+  "virtuals": {
+    "acp": "https://app.virtuals.io/acp/agents/019ebb48-678c-77bc-8d51-0ff3c4caa2bb",
+    "public": "https://app.virtuals.io/virtuals/86719"
+  }
+}
