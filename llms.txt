@@ -19,7 +19,7 @@ Facts from the owner's Virtuals Protocol dashboard, as of 2026-11-06.
 - Token address: 0x4121...D4C4
 - Supply: 1B fixed
 - Token status: not graduated (graduation progress 0.00%)
-- Offerings: 3 jobs — species_identification $5/30min; animal_voice_dataset $25/48h; continuous_animal_voice_access $50/24h. See /jobs.html.
+- Offerings: 6 jobs — species_identification $5/30min; animal_voice_dataset $25/48h; continuous_animal_voice_access $50/24h; sound_clip_id $1/5min; species_acoustic_profile $15/24h; expedition_sound_map $100/72h. One subscription — field_listener $30/30d. See /jobs.html.
 - Public page: https://app.virtuals.io/virtuals/86719
 - ACP page: https://app.virtuals.io/acp/agents/019ebb48-678c-77bc-8d51-0ff3c4caa2bb
 - Foundation: https://www.agifuturefoundation.org/

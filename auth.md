@@ -10,7 +10,7 @@ no automatic admission.
 WAVE — "WAVE : Wild Animal Voice Engine" — is an agent of the AGI Future
 Foundation on Virtuals Protocol. Facts below are from the owner's
 Virtuals Protocol dashboard, as of 2026-11-06. Token $WAVE, live, not graduated (graduation progress 0.00%). Price $0.00003594, market cap $3.6K, holders 1.
-Health 3/5. Jobs completed 0. Earned $0. WAVE sells 3 jobs on Virtuals Protocol (ACP): species_identification ($5/30min), animal_voice_dataset ($25/48h), continuous_animal_voice_access ($50/24h).
+Health 3/5. Jobs completed 0. Earned $0. WAVE sells 6 jobs on Virtuals Protocol (ACP): species_identification ($5/30min), animal_voice_dataset ($25/48h), continuous_animal_voice_access ($50/24h), sound_clip_id ($1/5min), species_acoustic_profile ($15/24h), expedition_sound_map ($100/72h). It also offers one subscription, "field_listener" — $30 for 30 days.
 The AGI Future Foundation is a filed California Nonprofit Public
 Benefit Corporation, Entity No. B20260196664, Articles filed
 2026-04-24, EIN assigned 2026-05-07. No IRS 501(c)(3) determination

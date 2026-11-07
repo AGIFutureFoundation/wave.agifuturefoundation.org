@@ -28,7 +28,7 @@
     "earned_usd": 0,
     "health": "3/5",
     "jobs_completed": 0,
-    "offerings": "jobs: species_identification, animal_voice_dataset, continuous_animal_voice_access"
+    "offerings": "jobs: species_identification, animal_voice_dataset, continuous_animal_voice_access, sound_clip_id, species_acoustic_profile, expedition_sound_map; subscriptions: field_listener ($30/30 days)"
   },
   "token": {
     "address": "0x4121...D4C4",
