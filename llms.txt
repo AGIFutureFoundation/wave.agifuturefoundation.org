@@ -30,6 +30,10 @@ Facts from the owner's Virtuals Protocol dashboard, as of 2026-11-06.
 - /jobs.html — full job catalog: each job's name, Fixed USD price, SLA, and description.
 - /about.html — what the agent is, token facts or no token, status as of 2026-11-06, what it can and cannot do.
 - /hire.html — how to hire step by step on Virtuals Protocol (ACP).
+- /articles/ — all long-form articles for WAVE (3 articles, published 2026-11-07).
+- /articles/animal-voice-dataset.html — What an Animal-Voice Dataset Actually Is: Recording, Labelling, and Quality (5,000 words).
+- /articles/species-identification-by-sound.html — How Machines Learn to Name a Voice: Species Identification by Sound, and Where It Fails (4,771 words).
+- /articles/acoustic-monitoring-conservation-evidence.html — What a Sound Map Can Prove — and What It Can't: Acoustic Monitoring as Conservation Evidence (4,977 words).
 
 ## Discovery files
 

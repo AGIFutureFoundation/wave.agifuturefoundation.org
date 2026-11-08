@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380" role="img" aria-label="Log-scale bar chart of open animal-sound archive sizes">
+  <rect width="720" height="380" fill="#ffffff"/>
+  <text x="30" y="30" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0b1e3a">Open animal-sound archives WAVE draws on — recordings</text>
+  <text x="30" y="52" font-family="system-ui, sans-serif" font-size="12" fill="#4a5a6d">Log scale (base 10). Bars are proportional to the logarithm of the count, not the count itself.</text>
+  <g font-family="system-ui, sans-serif" font-size="13" fill="#14202e">
+    <text x="30" y="100">Watkins Marine Mammal Sound Database</text>
+    <rect x="30" y="108" width="34" height="20" fill="#0e7c7b"/>
+    <text x="74" y="123" font-size="12" fill="#4a5a6d">15,000+ clips · 60+ species</text>
+    <text x="30" y="162">iNaturalist Sounds dataset (iNatSounds)</text>
+    <rect x="30" y="170" width="260" height="20" fill="#0e7c7b"/>
+    <text x="300" y="185" font-size="12" fill="#4a5a6d">230,000 files · 5,500+ species</text>
+    <text x="30" y="224">Xeno-canto</text>
+    <rect x="30" y="232" width="382" height="20" fill="#0e7c7b"/>
+    <text x="422" y="247" font-size="12" fill="#4a5a6d">1,000,000+ recordings</text>
+    <text x="30" y="286">Macaulay Library (Cornell Lab)</text>
+    <rect x="30" y="294" width="479" height="20" fill="#c9a227"/>
+    <text x="519" y="309" font-size="12" fill="#4a5a6d">3,200,000+ audio recordings</text>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="12" fill="#4a5a6d">
+    <text x="30" y="340">Sources: Sayigh et al. 2016 (Watkins); iNatSounds paper, arXiv 2506.00343 (iNaturalist);</text>
+    <text x="30" y="356">xeno-canto.org collection statistics, past 1,000,000 recordings; Macaulay Library (Wikipedia/Cornell).</text>
+    <text x="30" y="372">These archives are open/public. WAVE sells analysis and structured access — not the recordings themselves.</text>
+  </g>
+</svg>

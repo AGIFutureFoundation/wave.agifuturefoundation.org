@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" role="img" aria-label="Bar chart of WAVE's six ACP jobs by fixed USD price">
+  <rect width="720" height="360" fill="#ffffff"/>
+  <text x="30" y="30" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0b1e3a">WAVE's six ACP jobs, by price (Fixed USD)</text>
+  <text x="30" y="52" font-family="system-ui, sans-serif" font-size="12" fill="#4a5a6d">Prices and SLAs as listed on Virtuals Protocol (ACP), as recorded 2026-11-06. Require Funds is ON for every job.</text>
+  <g font-family="system-ui, sans-serif" font-size="13" fill="#14202e">
+    <text x="30" y="96">sound_clip_id — $1 · 5 min</text>
+    <rect x="270" y="82" width="8" height="18" fill="#0e7c7b"/>
+    <text x="30" y="134">species_identification — $5 · 30 min</text>
+    <rect x="270" y="120" width="24" height="18" fill="#0e7c7b"/>
+    <text x="30" y="172">species_acoustic_profile — $15 · 24 h</text>
+    <rect x="270" y="158" width="72" height="18" fill="#0e7c7b"/>
+    <text x="30" y="210">animal_voice_dataset — $25 · 48 h</text>
+    <rect x="270" y="196" width="120" height="18" fill="#0e7c7b"/>
+    <text x="30" y="248">continuous_animal_voice_access — $50 · 24 h</text>
+    <rect x="270" y="234" width="240" height="18" fill="#0e7c7b"/>
+    <text x="30" y="286">expedition_sound_map — $100 · 72 h</text>
+    <rect x="270" y="272" width="400" height="18" fill="#c9a227"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="12" fill="#4a5a6d">
+    <text x="270" y="310">Bars are proportional to price. The $100 expedition_sound_map is the only job above $50.</text>
+    <text x="270" y="328">Status note: as of 2026-11-06 WAVE's instance is offline — no instance is deployed,</text>
+    <text x="270" y="344">so no hire can be fulfilled today. Source: owner's Virtuals Protocol dashboard, 2026-11-06.</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380" role="img" aria-label="Grouped bar chart of the five AGI Future Foundation agents' ACP jobs and subscriptions">
+  <rect width="720" height="380" fill="#ffffff"/>
+  <text x="30" y="30" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0b1e3a">The five Foundation agents on Virtuals ACP — jobs and subscriptions</text>
+  <text x="30" y="52" font-family="system-ui, sans-serif" font-size="12" fill="#4a5a6d">Counts as recorded 2026-11-06. Total across the five agents: 29 jobs + 6 subscriptions.</text>
+  <g font-family="system-ui, sans-serif" font-size="13" fill="#14202e">
+    <text x="30" y="96">Omega</text>
+    <rect x="150" y="82" width="250" height="18" fill="#0e7c7b"/><text x="410" y="96" font-size="12">5 jobs</text>
+    <rect x="150" y="104" width="50" height="18" fill="#c9a227"/><text x="210" y="118" font-size="12">1 subscription</text>
+    <text x="30" y="152">Tactile</text>
+    <rect x="150" y="138" width="300" height="18" fill="#0e7c7b"/><text x="460" y="152" font-size="12">6 jobs</text>
+    <rect x="150" y="160" width="100" height="18" fill="#c9a227"/><text x="260" y="174" font-size="12">2 subscriptions</text>
+    <text x="30" y="208">ALS</text>
+    <rect x="150" y="194" width="300" height="18" fill="#0e7c7b"/><text x="460" y="208" font-size="12">6 jobs</text>
+    <rect x="150" y="216" width="50" height="18" fill="#c9a227"/><text x="210" y="230" font-size="12">1 subscription</text>
+    <text x="30" y="264">CMMC</text>
+    <rect x="150" y="250" width="300" height="18" fill="#0e7c7b"/><text x="460" y="264" font-size="12">6 jobs</text>
+    <rect x="150" y="272" width="50" height="18" fill="#c9a227"/><text x="210" y="286" font-size="12">1 subscription</text>
+    <text x="30" y="320">WAVE</text>
+    <rect x="150" y="306" width="300" height="18" fill="#0e7c7b"/><text x="460" y="320" font-size="12">6 jobs</text>
+    <rect x="150" y="328" width="50" height="18" fill="#c9a227"/><text x="210" y="342" font-size="12">1 subscription</text>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="12" fill="#4a5a6d">
+    <text x="30" y="368">Source: owner's Virtuals Protocol (ACP) dashboard, as recorded 2026-11-06. Listing is not fulfilment:</text>
+    <text x="30" y="384" font-size="12" fill="#4a5a6d">WAVE's instance is offline, so no WAVE hire can be fulfilled today.</text>
+  </g>
+</svg>
