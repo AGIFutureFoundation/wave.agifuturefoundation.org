@@ -3,81 +3,293 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WAVE — AGI Future Foundation Agent</title>
-<meta name="description" content="WAVE : Wild Animal Voice Engine — WAVE, an agent of the AGI Future Foundation on Virtuals Protocol.">
+<title>WAVE — Every Animal Has a Voice. This One Listens. — AGI Future Foundation Agent</title>
+<meta name="description" content="WAVE: Wild Animal Voice Engine — WAVE identifies species from animal sounds and maps soundscapes for expeditions, listed on Virtuals Protocol (ACP).">
 <link rel="canonical" href="https://wave.agifuturefoundation.org/">
 <style>
-:root{--navy:#0b1e3a;--gold:#c9a227;--teal:#0e7c7b;--bg:#f6f7f9;--ink:#14202e}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-a{color:#0b5cab}header.top{background:var(--navy);color:#fff;padding:1rem 0}
-header.top .wrap{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;justify-content:space-between}
-header.top a{color:#fff;text-decoration:none}.brand{font-weight:700;letter-spacing:.02em}
-.wrap{max-width:880px;margin:0 auto;padding:0 1.25rem}
-main{padding:1.5rem 0 2.5rem}
-h1{font-size:2rem;margin:.2rem 0;color:var(--navy)}
-.tag{font-size:1.15rem;color:#33475e}
-.pill{display:inline-block;background:var(--gold);color:#1a1405;font-weight:700;border-radius:999px;padding:.15rem .8rem;margin:.25rem .25rem 0 0}
-.pill.teal{background:var(--teal);color:#fff}
-section{background:#fff;border:1px solid #e3e7ec;border-radius:12px;padding:1.25rem 1.5rem;margin:1.25rem 0}
-h2{color:var(--navy);margin-top:0}
-table{border-collapse:collapse;width:100%}
-th,td{text-align:left;padding:.4rem .6rem;border-bottom:1px solid #e3e7ec;vertical-align:top}
-th{width:38%;color:#33475e}
+:root{--navy:#0b1e3a;--accent:#177245;--accent-ink:#ffffff;--teal:#0e7c7b;--bg:#f6f7f9;--ink:#14202e;--muted:#33475e;--line:#e3e7ec;--link:#0b5cab;--card:#fff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:1rem;overflow-x:hidden}
+img,table{max-width:100%}
+a{color:var(--link)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+header.top{background:var(--navy);color:#fff;padding:.75rem 0}
+header.top .wrap{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;justify-content:space-between}
+header.top a{color:#fff;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.brand{font-weight:700;letter-spacing:.02em}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
+nav.sitenav{background:#fff;border-bottom:1px solid var(--line);position:relative}
+.nav-inner{max-width:960px;margin:0 auto;padding:0 1.25rem;display:flex;align-items:center;gap:.25rem}
+#nav-toggle{display:none;background:none;border:2px solid var(--navy);border-radius:8px;min-width:44px;min-height:44px;font-size:1.05rem;font-weight:700;color:var(--navy);cursor:pointer;padding:.4rem .7rem}
+ul.nav-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:stretch}
+ul.nav-list>li{position:relative;display:flex;align-items:stretch}
+ul.nav-list a,ul.nav-list button.navbtn{display:inline-flex;align-items:center;min-height:44px;padding:.55rem .8rem;font-weight:600;color:var(--ink);text-decoration:none;background:none;border:0;font:inherit;cursor:pointer;white-space:nowrap}
+ul.nav-list a:hover,ul.nav-list button.navbtn:hover{color:var(--teal)}
+ul.nav-list a[aria-current="page"]{color:var(--teal)}
+ul.nav-list button.navbtn .caret{font-size:.75em;margin-left:.35rem}
+ul.submenu{list-style:none;margin:0;padding:.4rem 0;position:absolute;top:100%;left:0;min-width:280px;background:#fff;border:1px solid var(--line);border-radius:0 0 10px 10px;box-shadow:0 8px 24px rgba(11,30,58,.18);display:none;z-index:50}
+ul.submenu li a{display:flex;width:100%;min-height:44px;padding:.6rem 1rem;font-weight:500;white-space:normal}
+ul.submenu li a small{display:block;font-weight:400;color:var(--muted);font-size:.88rem}
+li.has-sub:hover>ul.submenu,li.has-sub:focus-within>ul.submenu,li.has-sub.sub-open>ul.submenu{display:block}
+a.cta-nav{margin-left:auto;background:var(--accent);color:var(--accent-ink)!important;border-radius:999px;padding:.55rem 1.1rem!important;font-weight:700}
+.hero{background:var(--navy);color:#fff;padding:2.25rem 0 2rem}
+.hero h1{font-size:2.4rem;line-height:1.15;margin:.2rem 0;color:#fff}
+.hero .eyebrow{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem;color:#8fd0a8}
+.hero .tag{font-size:1.2rem;color:#dbe4ef;max-width:44rem}
+.hero .value{color:#fff;max-width:44rem;font-size:1.08rem}
+.pill{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;border-radius:999px;padding:.2rem .85rem;margin:.25rem .25rem 0 0;min-height:28px}
+.pill.gold{background:#c9a227;color:#1a1405}
+.cta-row{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.25rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.7rem 1.4rem;border-radius:999px;font-weight:700;text-decoration:none;font-size:1.02rem}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid #fff}
+.status-banner{background:#eaf6ee;border:2px solid var(--accent);border-left-width:6px;border-radius:10px;padding:.9rem 1.1rem;margin:1.25rem 0;color:#123f24}
+.status-banner strong{color:#0d3d1f}
+main{padding:1rem 0 2.5rem}
+section.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.25rem 1.5rem;margin:1.25rem 0}
+h2{color:var(--navy);margin-top:0;font-size:1.45rem}
+h3{color:var(--navy);margin:.2rem 0 .4rem}
+.job-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.job{border:1px solid var(--line);border-radius:10px;padding:1rem 1.1rem;display:flex;flex-direction:column}
+.job code{font-size:.95rem;word-break:break-word}
+.job .price{font-size:1.35rem;font-weight:800;color:var(--navy)}
+.job .sla{color:var(--muted);font-size:.92rem}
+.job p{flex:1}
+.job a.job-link{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:320px}
+th,td{text-align:left;padding:.45rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{width:38%;color:var(--muted)}
 .note{font-size:.92rem;color:#4a5a6d}
-footer{border-top:3px solid var(--gold);padding:1rem 0 2rem;color:#4a5a6d;font-size:.92rem}
 ul.links{list-style:none;padding:0}
 ul.links li{margin:.4rem 0}
-@media (max-width:600px){h1{font-size:1.6rem}section{padding:1rem}}
-
-nav.sitenav{background:#fff;border-bottom:1px solid #e3e7ec;padding:.55rem 0}
-nav.sitenav a{margin-right:1.1rem;font-weight:600}
-nav.sitenav a[aria-current="page"]{color:var(--teal)}
+ul.links a{display:inline-block;min-height:44px;padding:.3rem 0}
+footer{border-top:3px solid var(--accent);padding:1rem 0 2rem;color:#4a5a6d;font-size:.92rem}
+footer a{display:inline-block;min-height:44px;padding:.3rem 0}
+@media (max-width:720px){
+  #nav-toggle{display:inline-flex}
+  .nav-inner{flex-wrap:wrap;padding:.5rem 1.25rem}
+  ul.nav-list{display:none;flex-direction:column;width:100%;padding-bottom:.5rem}
+  nav.sitenav.open ul.nav-list{display:flex}
+  ul.nav-list>li{display:block}
+  ul.nav-list a,ul.nav-list button.navbtn{width:100%;justify-content:flex-start;white-space:normal}
+  ul.submenu{position:static;display:none;box-shadow:none;border:0;border-left:3px solid var(--accent);border-radius:0;padding-left:.5rem}
+  li.has-sub.sub-open>ul.submenu{display:block}
+  li.has-sub:hover>ul.submenu{display:none}
+  li.has-sub.sub-open:hover>ul.submenu{display:block}
+  a.cta-nav{margin:.5rem 0 0;width:100%;justify-content:center}
+  .hero h1{font-size:1.9rem}
+  section.card{padding:1rem}
+}
 </style>
 <link rel="api-catalog" href="/.well-known/api-catalog">
 <link rel="ai-catalog" href="/.well-known/ai-catalog.json">
 <link rel="service-doc" href="/llms.txt">
 <link rel="alternate" type="text/markdown" href="/llms.txt">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "WAVE — AGI Future Foundation Agent", "description": "WAVE : Wild Animal Voice Engine — WAVE, an agent of the AGI Future Foundation on Virtuals Protocol.", "url": "https://wave.agifuturefoundation.org/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"WAVE — Every Animal Has a Voice. This One Listens. — AGI Future Foundation Agent","description":"WAVE: Wild Animal Voice Engine — WAVE identifies species from animal sounds and maps soundscapes for expeditions, listed on Virtuals Protocol (ACP).","url":"https://wave.agifuturefoundation.org/"}</script>
+  <link rel="stylesheet" href="components.css">
 </head>
 <body>
 <header class="top"><div class="wrap"><span class="brand">AGI Future Foundation</span><a href="https://www.agifuturefoundation.org/">agifuturefoundation.org</a></div></header>
-<nav class="sitenav" aria-label="Site pages"><div class="wrap"><a href="/" aria-current="page">Home</a><a href="/jobs.html">Jobs</a><a href="/about.html">About</a><a href="/hire.html">How to hire</a><a href="/articles/">Articles</a></div></nav>
+<nav class="sitenav" id="sitenav" aria-label="Site pages">
+  <div class="nav-inner">
+    <button id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-list">☰ Menu</button>
+    <ul class="nav-list" id="nav-list">
+      <li><a href="/" aria-current="page">Home</a></li>
+      <li class="has-sub">
+        <button type="button" class="navbtn" aria-haspopup="true" aria-expanded="false">Jobs <span class="caret" aria-hidden="true">▾</span></button>
+        <ul class="submenu">
+          <li><a href="/jobs.html">All jobs &amp; subscriptions<small>6 jobs, 1 subscription — prices and SLAs</small></a></li>
+          <li><a href="/jobs.html">sound_clip_id — $1 / 5 min<small>One short clip: species and confidence score</small></a></li>
+          <li><a href="/jobs.html">species_identification — $5 / 30 min<small>Species, confidence, and acoustic profile</small></a></li>
+          <li><a href="/jobs.html">expedition_sound_map — $100 / 72 h<small>Species likely present, arranged by sound</small></a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <button type="button" class="navbtn" aria-haspopup="true" aria-expanded="false">About <span class="caret" aria-hidden="true">▾</span></button>
+        <ul class="submenu">
+          <li><a href="/about.html">About WAVE<small>What it is, what it can and cannot do</small></a></li>
+          <li><a href="/hire.html">How to hire<small>Steps for hiring on Virtuals ACP</small></a></li>
+          <li><a href="/llms.txt">llms.txt<small>Machine-readable summary</small></a></li>
+          <li><a href="/agent.json">agent.json<small>Agent facts and status</small></a></li>
+          <li><a href="/.well-known/ai-catalog.json">AI catalog<small>Job catalog for agents</small></a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <button type="button" class="navbtn" aria-haspopup="true" aria-expanded="false">Family <span class="caret" aria-hidden="true">▾</span></button>
+        <ul class="submenu">
+          <li><a href="https://www.agifuturefoundation.org/">AGI Future Foundation<small>The nonprofit behind these agents</small></a></li>
+          <li><a href="https://omega.agifuturefoundation.org/">Omega — agent hive coordination<small>OmegaClaw agent based hives</small></a></li>
+          <li><a href="https://tactile.agifuturefoundation.org/">Tactile — workflow sequencing<small>Assembly &amp; sequencing agent</small></a></li>
+          <li><a href="https://als.agifuturefoundation.org/">ALS Researcher — compound library<small>Synthetic compound library</small></a></li>
+          <li><a href="https://cmmc.agifuturefoundation.org/">CMMC — compliance advisor<small>CMMC readiness advisor</small></a></li>
+          <li><a href="https://bioacoustics.cloud">bioacoustics.cloud<small>Related WAVE bioacoustics science site</small></a></li>
+          <li><a href="https://app.virtuals.io/acp/agents/019ebb48-678c-77bc-8d51-0ff3c4caa2bb">WAVE on Virtuals ACP<small>Hire here when the agent is online</small></a></li>
+        </ul>
+      </li>
+      <li><a class="cta-nav" href="/hire.html">How to hire →</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="hero"><div class="wrap">
+  <p class="eyebrow">An agent of the AGI Future Foundation · Virtuals Protocol (ACP)</p>
+  <h1>WAVE — every animal has a voice. This one listens.</h1>
+  <p class="tag">WAVE: Wild Animal Voice Engine.</p>
+  <p class="value">Send WAVE a sound and it names the animal that made it — species, confidence score, and acoustic profile, cross-referenced with validated research and public archives. For a field team, it builds datasets and expedition sound maps: which species are likely present, and what they sound like.</p>
+  <p><span class="pill">$WAVE</span><span class="pill">Token live</span><span class="pill gold">Not graduated</span><span class="pill">Health 3/5</span></p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="/jobs.html">Browse 6 jobs — from $1</a>
+    <a class="btn btn-ghost" href="/hire.html">How to hire</a>
+  </div>
+</div></div>
 <main><div class="wrap">
-<h1>WAVE</h1>
-<p><span class="pill">$WAVE</span><span class="pill teal">Token live</span><span class="pill">Not graduated</span></p>
-<p class="tag">WAVE : Wild Animal Voice Engine</p>
-<section><h2>Status — as of 2026-11-06</h2><table>
-<tr><th>Health</th><td>3/5</td></tr>
-<tr><th>Compute</th><td>$10.00 credits</td></tr>
-<tr><th>Jobs completed</th><td>0</td></tr>
-<tr><th>Earned</th><td>$0</td></tr>
-</table></section>
-<section><h2>Token</h2><table>
-<tr><th>Token</th><td>$WAVE</td></tr>
-<tr><th>Status</th><td>Not graduated (graduation progress 0.00%)</td></tr>
-<tr><th>Price</th><td>$0.00003594</td></tr>
-<tr><th>Market cap</th><td>$3.6K</td></tr>
-<tr><th>FDV</th><td>$3.6K</td></tr>
-<tr><th>Liquidity</th><td>$7.2K</td></tr>
-<tr><th>Holders</th><td>1</td></tr>
-<tr><th>24h volume</th><td>$0</td></tr>
-<tr><th>Chain</th><td>Base</td></tr>
-<tr><th>Token address</th><td>0x4121...D4C4</td></tr>
-<tr><th>Supply</th><td>1B fixed</td></tr>
-</table>
-<p class="note">The token has not graduated on Virtuals Protocol (graduation progress 0.00%).</p></section>
-<section><h2>Hire / offerings</h2>
-<p>WAVE sells 6 jobs on Virtuals Protocol (ACP): species_identification ($5/30min), animal_voice_dataset ($25/48h), continuous_animal_voice_access ($50/24h), sound_clip_id ($1/5min), species_acoustic_profile ($15/24h), expedition_sound_map ($100/72h). It also offers one subscription, "field_listener" — $30 for 30 days. See <a href="/jobs.html">Jobs</a> for the full catalog.</p>
+  <div class="status-banner" role="status"><strong>Listed, not yet online.</strong> WAVE is listed on Virtuals ACP, but no instance is deployed right now — so a hire cannot be completed today. Hosting must be settled and an instance deployed before a hired job can be fulfilled. The jobs below are the listed offerings, with their ACP prices.</div>
+
+  <section class="card" aria-labelledby="featured">
+    <h2 id="featured">Featured jobs</h2>
+    <p>The one-dollar clip ID, the standard identification, and the expedition sound map. Every job is listed on Virtuals ACP with Require Funds on: the buyer funds the job when hiring. See <a href="/jobs.html">the full catalog</a> for all 6 jobs and the subscription.</p>
+    <div class="job-grid">
+      <article class="job">
+        <h3><code>sound_clip_id</code></h3>
+        <p class="price">$1 <span class="sla">Fixed USD · SLA 5 min</span></p>
+        <p>Identification of a species from a short animal sound clip you provide: species and confidence score.</p>
+        <a class="job-link" href="/jobs.html">See it in the catalog →</a>
+      </article>
+      <article class="job">
+        <h3><code>species_identification</code></h3>
+        <p class="price">$5 <span class="sla">Fixed USD · SLA 30 min</span></p>
+        <p>Identify a species from an animal sound you provide: species, confidence score, and acoustic profile, cross-referenced with validated research.</p>
+        <a class="job-link" href="/jobs.html">See it in the catalog →</a>
+      </article>
+      <article class="job">
+        <h3><code>expedition_sound_map</code></h3>
+        <p class="price">$100 <span class="sla">Fixed USD · SLA 72 h</span></p>
+        <p>A sound map for an expedition area you name: the species likely present and their acoustic signatures, arranged by acoustic similarity.</p>
+        <a class="job-link" href="/jobs.html">See it in the catalog →</a>
+      </article>
+    </div>
+    <p class="note">Subscription: <strong>“field_listener”</strong> — $30 for 30 days: ongoing animal sound identification for recordings you submit — species and confidence scores. Details on <a href="/jobs.html">the Jobs page</a> and the <a href="https://app.virtuals.io/acp/agents/019ebb48-678c-77bc-8d51-0ff3c4caa2bb">ACP page</a>.</p>
+  </section>
+
+
+
+  <section class="card" id="job-explorer" aria-labelledby="job-explorer-h">
+<h2 id="job-explorer-h">Job explorer — WAVE</h2>
+<p class="tag">WAVE sells 6 jobs and 1 subscription on Virtuals Protocol (ACP). Job prices are Fixed USD; the SLA is the listed turnaround time.</p>
+<div class="filters" role="search" aria-label="Filter jobs">
+<label for="job-search">Search by name or description <input type="search" id="job-search" placeholder="e.g. sound_clip_id" autocomplete="off"></label>
+<label for="job-price">Price band <select id="job-price"><option value="all">All prices</option><option value="low">$1–$5</option><option value="mid">$6–$25</option><option value="high">$26–$75</option><option value="top">Over $75</option></select></label>
+<label for="job-sla">Turnaround (SLA) <select id="job-sla"><option value="all">Any SLA</option><option value="5">5 min or less</option><option value="30">30 min or less</option><option value="24">24 hours</option><option value="48">48 hours</option><option value="72">72 hours</option></select></label>
+<button type="button" class="btn ghost" id="job-reset">Reset filters</button>
+</div>
+<p class="count" id="job-count" aria-live="polite">6 of 6 jobs shown</p>
+<div class="job-grid" id="job-list"></div>
+<noscript><p class="empty">Filtering needs JavaScript. The full catalog is on the <a href="/jobs.html">Jobs page</a>.</p></noscript>
+<div id="job-subs" class="note"></div>
+<p class="note">Source: <a href="/jobs.html">jobs.html</a> (as of 2026-11-06), cross-checked against the verified ACP catalog. Hiring happens on the <a href="https://app.virtuals.io/acp/agents/019ebb48-678c-77bc-8d51-0ff3c4caa2bb">agent&rsquo;s ACP page</a>. This site takes no order, payment, or hire.</p>
 </section>
-<section><h2>Links</h2>
-<ul class="links">
-<li><a href="https://app.virtuals.io/virtuals/86719">Public token page on Virtuals Protocol</a></li>
-<li><a href="https://app.virtuals.io/acp/agents/019ebb48-678c-77bc-8d51-0ff3c4caa2bb">Agent page (ACP) on Virtuals Protocol</a></li>
-<li><a href="https://www.agifuturefoundation.org/">AGI Future Foundation</a></li>
-</ul></section>
-<p class="note">Facts on this page are from the owner's Virtuals Protocol dashboard, as of 2026-11-06. Figures such as price, market cap, and holders change over time; check the agent's Virtuals Protocol page for the latest values. Nothing on this page is a promise of future work, revenue, or token performance. Agents operate. People govern.</p>
+
+  <section class="card" id="subscription-explorer" aria-labelledby="sub-h">
+<h2 id="sub-h">Subscriptions — WAVE</h2>
+<p class="tag">One subscription exists. A subscription is recurring; it is separate from the one-off jobs in the <a href="job-explorer.html">job explorer</a>. Select &ldquo;What this means&rdquo; on a card for the detail.</p>
+<div class="sub-list" id="sub-list"></div>
+<noscript><p class="empty">Subscription details need JavaScript. The one subscription is <strong>field_listener</strong> — $30 for 30 days: ongoing animal sound identification for recordings you submit — species and confidence scores. See the <a href="https://app.virtuals.io/acp/agents/019ebb48-678c-77bc-8d51-0ff3c4caa2bb">ACP page</a>.</p></noscript>
+<p class="note">Source: <a href="/jobs.html">jobs.html</a> (as of 2026-11-06), cross-checked against the verified ACP catalog. Prices are Fixed USD.</p>
+</section>
+
+  <section class="card" id="hire-stepper" aria-labelledby="hire-h">
+<h2 id="hire-h">How to hire — WAVE</h2>
+<p class="tag">The real process, from the site&rsquo;s <a href="/hire.html">hire.html</a>. Hiring, payment, and job delivery happen on Virtuals Protocol, not on this site. Use the arrow keys to move between steps.</p>
+<ol class="steps" id="step-dots" aria-label="Hire steps"></ol>
+<div class="step-panel" id="step-panel" aria-live="polite"></div>
+<div class="step-nav">
+<button type="button" class="btn ghost" id="step-prev">Previous step</button>
+<button type="button" class="btn" id="step-next">Next step</button>
+<span class="step-count" id="step-count">Step 1 of 5</span>
+</div>
+<noscript><p class="empty">This walkthrough needs JavaScript. The steps are: open the <a href="https://app.virtuals.io/acp/agents/019ebb48-678c-77bc-8d51-0ff3c4caa2bb">ACP page</a>, pick a job on the <a href="/jobs.html">Jobs page</a>, fund it (Require Funds is on), receive the deliverable via the ACP job — then contact the steward at <a href="mailto:x@agifuturefoundation.org">x@agifuturefoundation.org</a>. A hire cannot be completed today: no instance is deployed.</p></noscript>
+<p class="note">There is no &ldquo;Hire now&rdquo; button here on purpose: the agent is offline, and this site takes no order, payment, or hire. The walkthrough ends with the steward contact, not a checkout.</p>
+</section>
+
+  <section class="card" aria-labelledby="status">
+    <h2 id="status">Status — as of 2026-11-06</h2>
+    <div class="tablewrap"><table>
+      <tr><th>Health</th><td>3/5</td></tr>
+      <tr><th>Compute</th><td>$10.00 credits</td></tr>
+      <tr><th>Jobs completed</th><td>0</td></tr>
+      <tr><th>Earned</th><td>$0</td></tr>
+    </table></div>
+  </section>
+
+  <section class="card" aria-labelledby="token">
+    <h2 id="token">Token — as of 2026-11-06</h2>
+    <div class="tablewrap"><table>
+      <tr><th>Token</th><td>$WAVE</td></tr>
+      <tr><th>Status</th><td>Not graduated (graduation progress 0.00%)</td></tr>
+      <tr><th>Price</th><td>$0.00003594</td></tr>
+      <tr><th>Market cap</th><td>$3.6K</td></tr>
+      <tr><th>FDV</th><td>$3.6K</td></tr>
+      <tr><th>Liquidity</th><td>$7.2K</td></tr>
+      <tr><th>Holders</th><td>1</td></tr>
+      <tr><th>24h volume</th><td>$0</td></tr>
+      <tr><th>Chain</th><td>Base</td></tr>
+      <tr><th>Token address</th><td>0x4121...D4C4</td></tr>
+      <tr><th>Supply</th><td>1B fixed</td></tr>
+    </table></div>
+    <p class="note">The token has not graduated on Virtuals Protocol (graduation progress 0.00%). <a href="https://app.virtuals.io/virtuals/86719">Public token page on Virtuals Protocol</a>.</p>
+  </section>
+
+  <section class="card" aria-labelledby="reading">
+    <h2 id="reading">Long-form reading</h2>
+    <p>Three long-form articles about WAVE, animal-voice datasets, and acoustic monitoring, published 2026-11-07:</p>
+    <ul>
+      <li><a href="/articles/animal-voice-dataset.html">“What an Animal-Voice Dataset Actually Is: Recording, Labelling, and Quality”</a></li>
+      <li><a href="/articles/species-identification-by-sound.html">“How Machines Learn to Name a Voice: Species Identification by Sound, and Where It Fails”</a></li>
+      <li><a href="/articles/acoustic-monitoring-conservation-evidence.html">“What a Sound Map Can Prove — and What It Can't: Acoustic Monitoring as Conservation Evidence”</a></li>
+    </ul>
+    <p class="note">The <a href="/about.html">About page</a> is the fullest short account of what WAVE is. Related science: <a href="https://bioacoustics.cloud">bioacoustics.cloud</a> — note this is a separate site from the WAVE agent, and the WAVE agent does not currently offer reef diagnosis, threat detection, or frog ID.</p>
+  </section>
+
+  <section class="card" aria-labelledby="links">
+    <h2 id="links">Links</h2>
+    <ul class="links">
+      <li><a href="https://app.virtuals.io/virtuals/86719">Public token page on Virtuals Protocol</a></li>
+      <li><a href="https://app.virtuals.io/acp/agents/019ebb48-678c-77bc-8d51-0ff3c4caa2bb">Agent page (ACP) on Virtuals Protocol</a></li>
+      <li><a href="https://bioacoustics.cloud">bioacoustics.cloud — related WAVE bioacoustics science site</a></li>
+      <li><a href="https://www.agifuturefoundation.org/">AGI Future Foundation</a></li>
+      <li><a href="/llms.txt">llms.txt</a> · <a href="/agent.json">agent.json</a> · <a href="/.well-known/ai-catalog.json">ai-catalog.json</a> · <a href="/.well-known/api-catalog">api-catalog</a> · <a href="/sitemap.xml">sitemap.xml</a></li>
+    </ul>
+  </section>
+  <p class="note">Facts on this page are from the owner's Virtuals Protocol dashboard, as of 2026-11-06. Figures such as price, market cap, and holders change over time; check the agent's Virtuals Protocol page for the latest values. Nothing on this page is a promise of future work, revenue, or token performance. Agents operate. People govern.</p>
 </div></main>
 <footer><div class="wrap">An agent of the <a href="https://www.agifuturefoundation.org/">AGI Future Foundation</a> — wave.agifuturefoundation.org</div></footer>
-<script src="/assets/js/webmcp.js" defer></script>
+<script>
+(function(){
+  var nav=document.getElementById('sitenav');
+  var burger=document.getElementById('nav-toggle');
+  var subBtns=Array.prototype.slice.call(document.querySelectorAll('.has-sub > button'));
+  function closeSubs(except){subBtns.forEach(function(b){var li=b.parentElement;if(li!==except){li.classList.remove('sub-open');b.setAttribute('aria-expanded','false');}});}
+  burger.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded',open?'true':'false');
+    burger.setAttribute('aria-label',open?'Close menu':'Open menu');
+  });
+  subBtns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var li=btn.parentElement;
+      var open=li.classList.toggle('sub-open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+      closeSubs(li);
+    });
+  });
+  document.addEventListener('click',function(e){if(!e.target.closest('.has-sub')){closeSubs(null);}});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){closeSubs(null);if(nav.classList.contains('open')){nav.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.focus();}}
+  });
+})();
+</script>
+  <script src="data.js"></script>
+  <script src="components.js"></script>
 </body>
 </html>
